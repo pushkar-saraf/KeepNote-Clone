@@ -28,13 +28,18 @@
 		</dependency>
 
 		<!-- Dependency for JSTL to be added -->
-		
-		<!-- Dependency for jaxb-api to be added(if using JDK9) -->
+	  <!-- https://mvnrepository.com/artifact/jstl/jstl -->
+	  <dependency>
+		  <groupId>jstl</groupId>
+		  <artifactId>jstl</artifactId>
+		  <version>1.2</version>
+	  </dependency>
+
+	  <!-- Dependency for jaxb-api to be added(if using JDK9) -->
 
 		<!-- Dependency for jaxb-impl to be added(if using JDK9) -->
 
 		<!-- Dependency for Spring Test to be added -->
-
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
