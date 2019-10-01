@@ -1,7 +1,6 @@
 package com.stackroute.keepnote.repository;
 
 import com.stackroute.keepnote.model.Note;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,17 +1,21 @@
 package com.stackroute.keepnote.model;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.util.Date;
 
 public class Note {
 	private int noteId;
-	private String noteTitle;
-	private String noteContent;
-	private String noteStatus;
+	private String noteTitle = "Title";
+	private String noteContent = "this is sample content";
+	private String noteStatus = "done";
 	private LocalDateTime createdAt;
 
-	public Note() {
+	public Note(){ }
+
+	public Note(int noteId, String noteTitle, String noteContent, String noteStatus) {
+		this.noteId = noteId;
+		this.noteTitle = noteTitle;
+		this.noteContent = noteContent;
+		this.noteStatus = noteStatus;
 	}
 
 	public int getNoteId() {
@@ -26,7 +30,7 @@ public class Note {
 		return noteTitle;
 	}
 
-	public void setNoteTitle(String string) {
+	public void setNoteTitle(String noteTitle) {
 		this.noteTitle = noteTitle;
 	}
 
@@ -34,7 +38,7 @@ public class Note {
 		return noteContent;
 	}
 
-	public void setNoteContent(String string) {
+	public void setNoteContent(String noteContent) {
 		this.noteContent = noteContent;
 	}
 
@@ -42,7 +46,7 @@ public class Note {
 		return noteStatus;
 	}
 
-	public void setNoteStatus(String string) {
+	public void setNoteStatus(String noteStatus) {
 		this.noteStatus = noteStatus;
 	}
 
@@ -60,4 +64,5 @@ public class Note {
 	public String toString() {
 		return null;
 	}
+
 }
